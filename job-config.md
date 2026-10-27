@@ -1,0 +1,24 @@
+# AWS Glue ETL Job Configuration
+
+## Job Overview
+- **Job Name:** vanet-traffic-deduplication-job
+- **Service:** AWS Glue Studio
+- **Job Type:** Visual ETL
+- **Source Format:** CSV
+- **Target Format:** Parquet
+- **Storage:** Amazon S3
+
+## Transformation Steps
+1. Read the source CSV dataset from Amazon S3.
+2. Apply the configured schema and data type transformations.
+3. Remove duplicate records.
+4. Write the transformed data in Parquet format to Amazon S3.
+5. Use the AWS Glue Data Catalog and Amazon Athena for querying and validation.
+
+## Configuration Notes
+- Document the actual AWS Glue version used.
+- Document the actual worker type and number of workers, if relevant.
+- Document the source and target data structure without exposing private bucket names or credentials.
+- Record the actual job run status and validation results.
+
+**Security:** Do not include AWS access keys, secret keys, passwords, or other sensitive account information.
