@@ -18,7 +18,9 @@ The pipeline reads raw traffic data in CSV format from Amazon S3, applies schema
 - Validate the processed dataset and query it using Amazon Athena.
 
 ## Architecture
-
+<p align="center">
+  <img src="screenshots/AWS Glue VANET Traffic Deduplication Pipeline.png" alt="AWS Glue ETL Architecture Diagram for VANET Traffic Data" width="1000">
+</p>
 ```text
 Raw CSV Dataset
       |
